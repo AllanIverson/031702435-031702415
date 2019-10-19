@@ -1,0 +1,31 @@
+textarea.inputarea
+{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    resize: none;
+}
+
+
+#inputBtn
+{
+    margin-right: 100px;
+}
+
+div.textform
+{
+    text-align: center;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+canvas {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: 0 auto;
+    z-index: -1;
+    position: absolute;
+}

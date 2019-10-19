@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TreeView</title>
+    <link rel="stylesheet" href="static/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="static/lib/bootstrap-table.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <script src="static/lib/jquery.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="static/lib/bootstrap-table.js"></script>
+    <script src="static/lib/bootstraptable-treeview.js"></script>
+
+    <script>
+    $(function (){
+        $("input.tree-btn").hide();
+    })
+    </script>
+
+</head>
+
+<body style="overflow-y:scroll;">
+
+    <nav class="navbar navbar-inverse">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">Academic Tree</a>
+    </nav>
+    
+
+    
+    <div class="container-fluid">
+        <div class="textform">
+            <form>
+                <div>
+                    <textarea class="inputarea" id="inarea" rows="10" cols="100"></textarea>    
+                </div>
+                <button type="button" class="btn btn-info" id="inputBtn" onclick="readText();creatTree();">生成树</button>
+                <button type="button" class="btn btn-info" id="reBtn" onclick="clearText();">清空</button>
+            </form>
+        </div>
+        <br>
+
+        <div style="margin:20px">
+            <input type="button" id="expandAllTree" value="展开所有"  class="btn btn-defaul tree-btn"/>
+            <input type="button" id="collapseAllTree" value="折叠所有" class="btn btn-defaul tree-btn"/>
+            <table id="tree_table"></table>
+    
+        </div>
+    </div>    
+
+    
+
+<script src="static/js/index.js"></script>
+</body>
+
+</html>
